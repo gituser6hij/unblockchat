@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512.5"
+   height="512"
+   viewBox="0 0 1025 1024"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="WhhCopy.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="1.6328125"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill="#eab308"
+     d="M960.193 1024h-512q-27 0-45.5-18.5t-18.5-45.5V768h224q31 0 55.5-18t34.5-46h166q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5h-160V512h160q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5h-160V320h256q26 0 45 19t19 45v576q0 26-18.5 45t-45.5 19zm-96-192h-320q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5h320q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5zm-288-128h-512q-27 0-45.5-18.5T.193 640V64q0-26 18.5-45t45.5-19h512q27 0 45.5 19t18.5 45v576q0 27-19 45.5t-45 18.5zm-96-576h-320q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5h320q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5zm0 192h-320q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5h320q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5zm0 192h-320q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5h320q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5z"
+     id="path2"
+     style="fill:#ffd700;fill-opacity:1" />
+</svg>

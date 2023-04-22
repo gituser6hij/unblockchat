@@ -1,0 +1,75 @@
+:root {
+  --max-width: 100vw;
+  --font-mono: "Roboto Mono", monospace;
+  --gunmetal: #282c33ff;
+  --chamoisee: #ffd700ff;
+  --turquoise: #00ffff;
+  --moss-green: #0acaa6e6;
+  --steel-blue: #4e86bcff;
+  --super-green: rgba(10, 202, 166, 0.9);
+
+  color: var(--foreground-color);
+  background: linear-gradient(
+    to bottom,
+    var(--background-start-color),
+    var(--background-end-color)
+  );
+  --foreground-color: #ccc;
+  --background-start-color: #163333;
+  --background-end-color: #102e4b;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: var(--max-width);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent !important;
+
+  outline: none !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #00ffff; /* Just a mild gray, you can change this to whatever you want */
+}
+
+button:hover,
+button:focus,
+button:active {
+  text-decoration: none;
+  color: #3c4146; /* Just a mild gray, you can change this to whatever you want */
+}
+
+h2 {
+  color: #00ffff;
+}
+
+h3 {
+  color: #f2f2f2;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #282c33;
+  border-radius: 12px;
+  padding: 9px 0;
+  margin: 10px 0;
+  width: auto;
+  font-family: monospace;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add this line for box shadow */
+}
