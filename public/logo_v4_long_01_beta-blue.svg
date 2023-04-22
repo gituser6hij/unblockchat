@@ -31,14 +31,14 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.0532399"
-     inkscape:cx="226.91886"
-     inkscape:cy="190.83971"
+     inkscape:cx="176.59794"
+     inkscape:cy="338.00467"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g24894-6" />
+     inkscape:current-layer="g1267" />
   <defs
      id="defs27802">
     <rect
@@ -105,22 +105,22 @@
                ry="7.9374995" />
             <text
                xml:space="preserve"
-               transform="matrix(0.32986692,0,0,0.32986692,-19.767541,24.857166)"
+               transform="matrix(0.36863504,0,0,0.36863504,-35.006058,16.041616)"
                id="text11440-9-5"
                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect11442-12-8);fill:#0acaa6;fill-opacity:1;stroke:none;stroke-width:4.07689;stroke-miterlimit:4;stroke-dasharray:none"><tspan
                  x="294.45703"
                  y="243.42578"
-                 id="tspan10722">UNBLOCKCHAT</tspan></text>
+                 id="tspan956">UNBLOCKCHAT</tspan></text>
             <text
                xml:space="preserve"
-               transform="matrix(0.40519455,0,0,0.40519455,27.626532,17.357142)"
+               transform="matrix(0.31524629,0,0,0.31524629,64.315451,34.992097)"
                id="text11440-9-0"
                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect11442-12-5);fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:4.07689;stroke-miterlimit:4;stroke-dasharray:none"><tspan
                  x="294.45703"
                  y="243.42578"
-                 id="tspan10726"><tspan
+                 id="tspan960"><tspan
                    style="font-size:17.7742px"
-                   id="tspan10724">BETA</tspan></tspan></text>
+                   id="tspan958">BETA</tspan></tspan></text>
             <g
                id="g24894-6"
                transform="matrix(0.32114984,0,0,0.32114984,17.003869,25.312453)"
@@ -214,14 +214,14 @@
               </g>
               <text
                  xml:space="preserve"
-                 transform="matrix(0.34808176,0,0,0.34808176,-11.872687,17.043283)"
+                 transform="matrix(0.34808176,0,0,0.34808176,-11.363537,17.043283)"
                  id="text15912-7"
                  style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect15914-9);fill:#0acaa6;fill-opacity:1;stroke:none;stroke-width:10.5597;stroke-miterlimit:4;stroke-dasharray:none"><tspan
                    x="267.95703"
                    y="544.08789"
-                   id="tspan10730"><tspan
+                   id="tspan964"><tspan
                      style="font-weight:bold;-inkscape-font-specification:'sans-serif, Bold'"
-                     id="tspan10728">UBC</tspan></tspan></text>
+                     id="tspan962">UBC</tspan></tspan></text>
             </g>
           </g>
         </g>
