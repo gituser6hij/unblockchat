@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Web3 from "web3";
-import styles from "@/styles/Home.module.css";
+import styles from "./styles.module.css";
 
 function SwitchNetwork({ setAddress3 }) {
   const [chainId, setChainId] = useState("0x13881"); // default to Ethereum mainnet
@@ -41,19 +41,32 @@ function SwitchNetwork({ setAddress3 }) {
 
   return (
     <div className="wrapper">
-      <div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          backgroundColor: "transparent",
+          width: "100%",
+          flexDirection: "row",
+          marginTop: "9px",
+          padding: "0 0",
+          // height: "50px",
+        }}
+      >
         <select
+          className="networkSelect"
           value={chainId}
           onChange={handleNetworkChange}
           style={{
             padding: "10px 5px",
-            marginRight: "5px",
+            marginRight: "30px",
             // backgroundColor: "#282c33",
             borderRadius: "15px",
             border: "3px solid #0acaa6",
             fontFamily: "monospace",
             fontSize: "1.1em",
             marginTop: "0",
+            maxWidth: "50%",
           }}
         >
           <option value="0x1">Ethereum</option>
@@ -80,7 +93,7 @@ function SwitchNetwork({ setAddress3 }) {
             borderRadius: "15px",
             padding: "10px 5px",
             border: "3px solid #0acaa6",
-            marginTop: "10px",
+            marginTop: "0",
           }}
         >
           Switch Network

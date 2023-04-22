@@ -59,13 +59,14 @@ function ConnectWalletButton({ setAddress3 }) {
         onChange={handleNetworkChange}
         style={{
           padding: "10px 5px",
-          marginRight: "5px",
+          marginRight: "30px",
           // backgroundColor: "#282c33",
           borderRadius: "15px",
           border: "3px solid #0acaa6",
           fontFamily: "monospace",
           fontSize: "1.1em",
           marginTop: "0",
+          maxWidth: "50%",
         }}
       >
         <option value="0x1">Ethereum</option>

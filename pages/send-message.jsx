@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Web3 from "web3";
-import styles from "@/styles/Home.module.css";
+import styles from "./styles.module.css";
 
 function SendMessage() {
   const [recipient, setRecipient] = useState("");
@@ -39,6 +39,7 @@ function SendMessage() {
     // </div>
 
     <form
+      className={styles.formSend}
       onSubmit={handleSubmit}
       style={{
         display: "flex",

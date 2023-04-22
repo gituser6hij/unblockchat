@@ -39,6 +39,8 @@ export default function Home() {
   const [isHelpVisible4, setIsHelpVisible4] = useState(false);
   const [isSendHelpClick1Visible, setIsSendHelpClick1Visible] = useState(true);
   const [isSendHelpClick2Visible, setIsSendHelpClick2Visible] = useState(false);
+  const [isSendHelpClick3Visible, setIsSendHelpClick3Visible] = useState(false);
+  const [isExplorerVisible, setIsExplorerVisible] = useState(true);
 
   const [isSendVisible, setIsSendVisible] = useState(false);
 
@@ -63,18 +65,21 @@ export default function Home() {
     setIsDropdownOpen(false);
     setIsSendVisible(false);
     setIsClicked(true);
+    setIsExplorerVisible(true);
   };
 
   const ToggleInbox = () => {
     setIsDropdownOpen(false);
     setIsSendVisible(false);
     setIsClicked(false);
+    setIsExplorerVisible(true);
   };
 
   const ToggleSend = () => {
     setIsDropdownOpen(false);
     setIsClicked(false);
     setIsSendVisible(true);
+    setIsExplorerVisible(false);
   };
 
   const ToggleSendNetwork = () => {
@@ -218,6 +223,14 @@ export default function Home() {
     setIsDropdownOpen(!isDropdownOpen);
     setIsSendVisible(false);
     setIsClicked(false);
+    setIsExplorerVisible(false);
+  };
+
+  const toggleExplorer = () => {
+    setIsDropdownOpen(false);
+    setIsSendVisible(false);
+    setIsClicked(false);
+    setIsExplorerVisible(true);
   };
 
   const handleHelpClick = () => {
@@ -230,6 +243,14 @@ export default function Home() {
 
   const handleSendHelpClick2 = () => {
     setIsSendHelpClick2Visible(!isSendHelpClick2Visible);
+  };
+
+  const handleSendHelpClick3 = () => {
+    setIsSendHelpClick3Visible(!isSendHelpClick3Visible);
+  };
+
+  const handleSendHelpClick3Close = () => {
+    setIsSendHelpClick3Visible(false);
   };
 
   const handleCloseClick = () => {
@@ -835,10 +856,16 @@ export default function Home() {
                 />
               </a>
             </div>
-            <p style={{ display: "flex", alignItems: "center" }}>
+            <p
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}
+            >
               Choose a network:
               <button
-                onClick={handleHelpClick}
+                onClick={handleSendHelpClick3}
                 type="button"
                 style={{
                   all: "unset", // Reset all styles
@@ -889,7 +916,7 @@ export default function Home() {
                         type="button"
                         style={{
                           all: "unset", // Reset all styles
-                          marginLeft: "9px",
+                          marginLeft: "40%",
                           cursor: "pointer",
 
                           // Adjust the margin as needed
@@ -922,6 +949,7 @@ export default function Home() {
                       border: "3px solid #0acaa6e6",
                       borderRadius: "15px",
                       padding: "5px",
+                      width: "100%",
                     }}
                   >
                     {address3}
@@ -934,38 +962,192 @@ export default function Home() {
             <SendMessage />
           </div>
         )}
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.settingsButtonContainer}>
-            <a href="https://unblockchat.auditutils.com/">
-              <img
-                src="CharmRefresh.svg"
-                alt="reset"
-                className={styles.myResetImage}
-              />
-            </a>
+        {isSendHelpClick3Visible && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0, 0, 0, 0.6)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 9999,
+            }}
+            onClick={handleSendHelpClick3Close}
+          >
+            <div
+              style={{
+                backgroundColor: "#282c33ff",
+                padding: "10px",
+                borderRadius: "15px",
+                maxWidth: "400px",
+                border: "3px solid rgba(10, 202, 166, 1)",
+                color: "#f2f2f2",
+                marginBottom: "3rem",
+                marginLeft: "20px",
+                marginRight: "20px",
+                fontSize: "1.3em",
+                fontFamily: "monospace",
+              }}
+              onClick={handleSendHelpClick3Close}
+            >
+              <p>
+                Chose a network, you will have to pay the gas fee on respective
+                networks. Then, connect your wallet.
+              </p>
+            </div>
           </div>
+        )}
+        {isExplorerVisible && (
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <div className={styles.settingsButtonContainer}>
+              <a href="https://unblockchat.auditutils.com/">
+                <img
+                  src="CharmRefresh.svg"
+                  alt="reset"
+                  className={styles.myResetImage}
+                />
+              </a>
+            </div>
 
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <p style={{ display: "flex", alignItems: "center" }}>
-              Enter a blockchain address:
-              <button
-                onClick={handleHelpClick}
-                type="button"
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <p style={{ display: "flex", alignItems: "center" }}>
+                Enter a blockchain address:
+                <button
+                  onClick={handleHelpClick}
+                  type="button"
+                  style={{
+                    all: "unset", // Reset all styles
+                    marginLeft: "3px",
+                    cursor: "pointer",
+                    // Adjust the margin as needed
+                  }}
+                >
+                  <img
+                    src="CarbonHelp.svg"
+                    alt="help"
+                    style={{ height: "20px" }}
+                  />
+                </button>
+              </p>
+              {isHelpVisible && (
+                <div
+                  style={{
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor: "rgba(0, 0, 0, 0.6)",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    zIndex: 9999,
+                  }}
+                  onClick={handleCloseClick}
+                >
+                  <div
+                    style={{
+                      backgroundColor: "#282c33ff",
+                      padding: "10px",
+                      borderRadius: "15px",
+                      maxWidth: "400px",
+                      border: "3px solid rgba(10, 202, 166, 1)",
+                      color: "#f2f2f2",
+                      marginBottom: "3rem",
+                      marginLeft: "20px",
+                      marginRight: "20px",
+                      fontSize: "1.3em",
+                      fontFamily: "monospace",
+                    }}
+                    onClick={handleCloseClick}
+                  >
+                    <p>
+                      Enter an address and retrieve the complete list of
+                      outgoing and ongoing messages associated with that account
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <label className={styles.label}>
+              <input
+                type="text"
+                value={address}
+                onChange={(event) => setAddress(event.target.value)}
+                className={styles.inputText}
+                placeholder="0x..."
+              />
+            </label>
+            {isClicked && (
+              <div
                 style={{
-                  all: "unset", // Reset all styles
-                  marginLeft: "3px",
-                  cursor: "pointer",
-                  // Adjust the margin as needed
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  width: "100%",
                 }}
               >
-                <img
-                  src="CarbonHelp.svg"
-                  alt="help"
-                  style={{ height: "20px" }}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "column",
+                    width: "100%",
+                  }}
+                >
+                  <p
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      fontSize: "1.1em",
+                      fontFamily: "monospace",
+                    }}
+                  >
+                    Enter a secondary address:
+                    <button
+                      onClick={handleHelpClick2}
+                      type="button"
+                      style={{
+                        all: "unset", // Reset all styles
+                        marginLeft: "3px",
+                        cursor: "pointer",
+                        // Adjust the margin as needed
+                      }}
+                    >
+                      <img
+                        src="CarbonHelp.svg"
+                        alt="help"
+                        style={{ height: "20px" }}
+                      />
+                    </button>
+                  </p>
+                  <input
+                    type="text"
+                    value={address2}
+                    onChange={(event) => setAddress2(event.target.value)}
+                    className={styles.inputText}
+                    placeholder="0x..."
+                  />
+                </div>
+
+                {/* <div>
+                Enter a transaction hash:{" "}
+                <input
+                  type="text"
+                  value={address3}
+                  onChange={(event) => setAddress3(event.target.value)}
+                  className={styles.inputText}
+                  placeholder="0x...(not available yet)"
                 />
-              </button>
-            </p>
-            {isHelpVisible && (
+              </div> */}
+              </div>
+            )}
+            {isHelpVisible2 && (
               <div
                 style={{
                   position: "fixed",
@@ -979,7 +1161,7 @@ export default function Home() {
                   alignItems: "center",
                   zIndex: 9999,
                 }}
-                onClick={handleCloseClick}
+                onClick={handleCloseClick2}
               >
                 <div
                   style={{
@@ -993,188 +1175,75 @@ export default function Home() {
                     marginLeft: "20px",
                     marginRight: "20px",
                     fontSize: "1.3em",
-                    fontFamily: "monospace",
                   }}
-                  onClick={handleCloseClick}
+                  onClick={handleCloseClick2}
                 >
                   <p>
-                    Enter an address and retrieve the complete list of outgoing
-                    and ongoing messages associated with that account
+                    Provide the secondary address to obtain an isolated
+                    conversation between these two accounts
                   </p>
                 </div>
               </div>
             )}
-          </div>
 
-          <label className={styles.label}>
-            <input
-              type="text"
-              value={address}
-              onChange={(event) => setAddress(event.target.value)}
-              className={styles.inputText}
-              placeholder="0x..."
-            />
-          </label>
-          {isClicked && (
             <div
               style={{
                 display: "flex",
-                alignItems: "center",
                 flexDirection: "column",
+                alignItems: "center",
                 width: "100%",
               }}
             >
-              <div
+              {" "}
+              <p
                 style={{
+                  // all: "unset",
                   display: "flex",
                   alignItems: "center",
-                  flexDirection: "column",
-                  width: "100%",
+                  fontSize: "1.1em",
+                  fontFamily: "monospace",
                 }}
               >
-                <p
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontSize: "1.1em",
-                    fontFamily: "monospace",
-                  }}
-                >
-                  Enter a secondary address:
-                  <button
-                    onClick={handleHelpClick2}
-                    type="button"
-                    style={{
-                      all: "unset", // Reset all styles
-                      marginLeft: "3px",
-                      cursor: "pointer",
-                      // Adjust the margin as needed
-                    }}
-                  >
-                    <img
-                      src="CarbonHelp.svg"
-                      alt="help"
-                      style={{ height: "20px" }}
-                    />
-                  </button>
-                </p>
-                <input
-                  type="text"
-                  value={address2}
-                  onChange={(event) => setAddress2(event.target.value)}
-                  className={styles.inputText}
-                  placeholder="0x..."
-                />
-              </div>
-
-              {/* <div>
-                Enter a transaction hash:{" "}
-                <input
-                  type="text"
-                  value={address3}
-                  onChange={(event) => setAddress3(event.target.value)}
-                  className={styles.inputText}
-                  placeholder="0x...(not available yet)"
-                />
-              </div> */}
-            </div>
-          )}
-          {isHelpVisible2 && (
-            <div
-              style={{
-                position: "fixed",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                backgroundColor: "rgba(0, 0, 0, 0.6)",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                zIndex: 9999,
-              }}
-              onClick={handleCloseClick2}
-            >
-              <div
-                style={{
-                  backgroundColor: "#282c33ff",
-                  padding: "10px",
-                  borderRadius: "15px",
-                  maxWidth: "400px",
-                  border: "3px solid rgba(10, 202, 166, 1)",
-                  color: "#f2f2f2",
-                  marginBottom: "3rem",
-                  marginLeft: "20px",
-                  marginRight: "20px",
-                  fontSize: "1.3em",
-                }}
-                onClick={handleCloseClick2}
+                Choose a network:
+              </p>
+              <select
+                value={network}
+                onChange={handleNetworkChange}
+                className={styles.networkSelect}
               >
-                <p>
-                  Provide the secondary address to obtain an isolated
-                  conversation between these two accounts
-                </p>
-              </div>
+                <option value="mainnet">Ethereum</option>
+                <option value="goerli">Eth Goerli</option>
+                <option value="sepolia">Eth Sepolia</option>
+                <option value="bsc">Bsc</option>
+                <option value="bsc-testnet">Bsc testnet</option>
+                <option value="polygon">Polygon</option>
+                <option value="polygon-testnet">Polygon mumbai</option>
+                <option value="polygon-zkevm">Polygon zkEVM</option>
+                <option value="optimistic">Optimism</option>
+                <option value="optimistic-goerli">Optimism Goerli</option>
+                <option value="arbitrum">Arbitrum</option>
+                <option value="arbitrum-goerli">Arbitrum Goerli</option>
+              </select>
             </div>
-          )}
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            {" "}
-            <p
-              style={{
-                // all: "unset",
-                display: "flex",
-                alignItems: "center",
-                fontSize: "1.1em",
-                fontFamily: "monospace",
-              }}
+            <button
+              type="submit"
+              className={`${styles.submitButton} ${
+                loading ? styles.loading : ""
+              }`}
+              disabled={loading}
+              onClick={handleButtonClick}
             >
-              Choose a network:
-            </p>
-            <select
-              value={network}
-              onChange={handleNetworkChange}
-              className={styles.networkSelect}
-            >
-              <option value="mainnet">Ethereum</option>
-              <option value="goerli">Eth Goerli</option>
-              <option value="sepolia">Eth Sepolia</option>
-              <option value="bsc">Bsc</option>
-              <option value="bsc-testnet">Bsc testnet</option>
-              <option value="polygon">Polygon</option>
-              <option value="polygon-testnet">Polygon mumbai</option>
-              <option value="polygon-zkevm">Polygon zkEVM</option>
-              <option value="optimistic">Optimism</option>
-              <option value="optimistic-goerli">Optimism Goerli</option>
-              <option value="arbitrum">Arbitrum</option>
-              <option value="arbitrum-goerli">Arbitrum Goerli</option>
-            </select>
-          </div>
-
-          <button
-            type="submit"
-            className={`${styles.submitButton} ${
-              loading ? styles.loading : ""
-            }`}
-            disabled={loading}
-            onClick={handleButtonClick}
-          >
-            {loading ? (
-              <div className={styles.loadingContainer}>
-                {gif && <img src={`/${gif}`} alt="In progress" />}
-              </div>
-            ) : (
-              "LOAD CHAT"
-            )}
-          </button>
-        </form>
+              {loading ? (
+                <div className={styles.loadingContainer}>
+                  {gif && <img src={`/${gif}`} alt="In progress" />}
+                </div>
+              ) : (
+                "LOAD CHAT"
+              )}
+            </button>
+          </form>
+        )}
 
         {transactions.length > 0 && (
           <div className={styles.conversation}>
