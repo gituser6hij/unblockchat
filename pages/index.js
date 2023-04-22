@@ -835,7 +835,25 @@ export default function Home() {
                 />
               </a>
             </div>
-
+            <p style={{ display: "flex", alignItems: "center" }}>
+              Choose a network:
+              <button
+                onClick={handleHelpClick}
+                type="button"
+                style={{
+                  all: "unset", // Reset all styles
+                  marginLeft: "3px",
+                  cursor: "pointer",
+                  // Adjust the margin as needed
+                }}
+              >
+                <img
+                  src="CarbonHelp.svg"
+                  alt="help"
+                  style={{ height: "20px" }}
+                />
+              </button>
+            </p>
             {address3 ? (
               <div
                 className={styles.addressContainer}
@@ -850,28 +868,6 @@ export default function Home() {
                   // height: "50px",
                 }}
               >
-                {/* {isSendHelpClick1Visible && (
-                  <button
-                    onClick={handleSendHelpClick2}
-                    type="button"
-                    style={{
-                      all: "unset", // Reset all styles
-                      // marginLeft: "3px",
-                      cursor: "pointer",
-
-                      // Adjust the margin as needed
-                    }}
-                  >
-                    <img
-                      src="CarbonSettings.svg"
-                      alt="help"
-                      style={{ height: "20px" }}
-                    />
-                  </button>
-                )} */}
-                {/* {isSendHelpClick2Visible && (
-                  <SwitchNetwork setAddress3={setAddress3} />
-                )} */}
                 <div
                   className={styles.connectedAddress}
                   style={{
@@ -910,8 +906,26 @@ export default function Home() {
                   {isSendHelpClick2Visible && (
                     <SwitchNetwork setAddress3={setAddress3} />
                   )}
-                  <p style={{ color: "#ccc" }}>From:</p>
-                  <p style={{ wordBreak: "break-word" }}>{address3}</p>
+                  <p
+                    style={{
+                      color: "#ccc",
+                      textAlign: "start",
+                      marginTop: "10px",
+                    }}
+                  >
+                    From:
+                  </p>
+                  <p
+                    style={{
+                      wordBreak: "break-word",
+                      marginTop: "0px",
+                      border: "3px solid #0acaa6e6",
+                      borderRadius: "15px",
+                      padding: "5px",
+                    }}
+                  >
+                    {address3}
+                  </p>
                 </div>
               </div>
             ) : (

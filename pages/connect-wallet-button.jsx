@@ -48,7 +48,7 @@ function ConnectWalletButton({ setAddress3 }) {
         backgroundColor: "transparent",
         width: "100%",
         flexDirection: "row",
-        marginTop: "0px",
+        marginTop: "6px",
         padding: "0 0",
         height: "50px",
       }}
@@ -60,8 +60,8 @@ function ConnectWalletButton({ setAddress3 }) {
         style={{
           padding: "10px 5px",
           marginRight: "5px",
-          backgroundColor: "#282c33",
-          borderRadius: "12px",
+          // backgroundColor: "#282c33",
+          borderRadius: "15px",
           border: "3px solid #0acaa6",
           fontFamily: "monospace",
           fontSize: "1.1em",
@@ -89,7 +89,7 @@ function ConnectWalletButton({ setAddress3 }) {
           fontFamily: "monospace",
           fontSize: "1.1em",
           fontWeight: "bold",
-          borderRadius: "12px",
+          borderRadius: "15px",
           padding: "10px 5px",
           border: "3px solid #0acaa6",
           marginTop: "0",

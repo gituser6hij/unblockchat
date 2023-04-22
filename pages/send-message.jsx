@@ -61,18 +61,20 @@ function SendMessage() {
           alignContent: "center",
           textAlign: "center",
           width: "100%",
-          margin: "0",
+          marginTop: "0px",
           padding: "0",
         }}
       >
-        <p htmlFor="recipient">To:</p>
+        <p htmlFor="recipient" style={{ marginTop: "15px" }}>
+          Enter recipient address:
+        </p>
         <input
           id="recipient"
           type="text"
           value={recipient}
           onChange={(e) => setRecipient(e.target.value)}
           className={styles.inputText}
-          placeholder="0x..."
+          placeholder="To: 0x..."
           style={{ width: "100%" }}
         />
       </div>
@@ -88,7 +90,9 @@ function SendMessage() {
           width: "100%",
         }}
       >
-        <p htmlFor="message">Message:</p>
+        <p htmlFor="message" style={{ marginTop: "10px" }}>
+          Enter your message:
+        </p>
         <textarea
           id="message"
           type="text"

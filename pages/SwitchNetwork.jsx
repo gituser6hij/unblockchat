@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Web3 from "web3";
-import styles from "./styles.module.css";
+import styles from "@/styles/Home.module.css";
 
 function SwitchNetwork({ setAddress3 }) {
   const [chainId, setChainId] = useState("0x13881"); // default to Ethereum mainnet
@@ -40,63 +40,52 @@ function SwitchNetwork({ setAddress3 }) {
   }
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        backgroundColor: "transparent",
-        width: "100%",
-        flexDirection: "row",
-        marginTop: "0px",
-        padding: "0 0",
-        // height: "50px",
-      }}
-    >
-      <select
-        className="networkSelect"
-        value={chainId}
-        onChange={handleNetworkChange}
-        style={{
-          padding: "15px 5px",
-          marginRight: "5px",
-          backgroundColor: "#282c33",
-          borderRadius: "12px",
-          border: "3px solid #0acaa6",
-          fontFamily: "monospace",
-          fontSize: "1.1em",
-          marginTop: "0",
-        }}
-      >
-        <option value="0x1">Ethereum</option>
-        <option value="0x5">Eth Goerli</option>
-        <option value="0xaa36a7">Eth Sepolia</option>
-        <option value="0x38">Bsc</option>
-        <option value="0x61">Bsc testnet</option>
-        <option value="0x89">Polygon</option>
-        <option value="0x13881">Polygon mumbai</option>
-        <option value="0x44d">Polygon zkEVM</option>
-        <option value="0xa">Optimism</option>
-        <option value="0x1a4">Optimism Goerli</option>
-        <option value="0xA4B1">Arbitrum</option>
-        <option value="0x66eed">Arbitrum Goerli</option>
-      </select>
-      <button
-        onClick={handleSwitch}
-        className={styles.submitButton}
-        style={{
-          backgroundColor: "#282c33",
-          color: "#0acaa6",
-          fontFamily: "monospace",
-          fontSize: "1.1em",
-          fontWeight: "bold",
-          borderRadius: "12px",
-          padding: "15px 5px",
-          border: "3px solid #0acaa6",
-          marginTop: "0",
-        }}
-      >
-        Switch Network
-      </button>
+    <div className="wrapper">
+      <div>
+        <select
+          value={chainId}
+          onChange={handleNetworkChange}
+          style={{
+            padding: "10px 5px",
+            marginRight: "5px",
+            // backgroundColor: "#282c33",
+            borderRadius: "15px",
+            border: "3px solid #0acaa6",
+            fontFamily: "monospace",
+            fontSize: "1.1em",
+            marginTop: "0",
+          }}
+        >
+          <option value="0x1">Ethereum</option>
+          <option value="0x5">Eth Goerli</option>
+          <option value="0xaa36a7">Eth Sepolia</option>
+          <option value="0x38">Bsc</option>
+          <option value="0x61">Bsc testnet</option>
+          <option value="0x89">Polygon</option>
+          <option value="0x13881">Polygon mumbai</option>
+          <option value="0x44d">Polygon zkEVM</option>
+          <option value="0xa">Optimism</option>
+          <option value="0x1a4">Optimism Goerli</option>
+          <option value="0xA4B1">Arbitrum</option>
+          <option value="0x66eed">Arbitrum Goerli</option>
+        </select>
+        <button
+          onClick={handleSwitch}
+          style={{
+            backgroundColor: "#282c33",
+            color: "#00ffff",
+            fontFamily: "monospace",
+            fontSize: "1.1em",
+            fontWeight: "bold",
+            borderRadius: "15px",
+            padding: "10px 5px",
+            border: "3px solid #0acaa6",
+            marginTop: "10px",
+          }}
+        >
+          Switch Network
+        </button>
+      </div>{" "}
     </div>
   );
 }
