@@ -52,7 +52,7 @@ Contributions are welcome! If you would like to contribute to UnBlockChat, pleas
 For any inquiries or feedback, please contact user137 at user137@protonmail.com or visit the [AuditUtils blog](https://auditutils.com) for more information.
 
 <div align="center">
-<img src="https://github.com/gituser6hij/block-chat-app/blob/main/public/logo_v4_square_01.svg" alt="BlockChat Logo">
+<img src="https://github.com/gituser6hij/unblockchat/blob/main/public/logo_v4_square_01.svg" alt="BlockChat Logo">
 </div>
 
 ## License
