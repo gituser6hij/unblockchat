@@ -1,6 +1,6 @@
-# Contributing to BlockChat
+# Contributing to UnBlockChat
 
-Thank you for your interest in contributing to BlockChat! We welcome contributions from the community to help improve and enhance the app. Before contributing, please review the guidelines below.
+Thank you for your interest in contributing to UnBlockChat! We welcome contributions from the community to help improve and enhance the app. Before contributing, please review the guidelines below.
 
 ## Getting Started
 
@@ -22,11 +22,11 @@ Thank you for your interest in contributing to BlockChat! We welcome contributio
 
 ## Code of Conduct
 
-Please note that by contributing to BlockChat, you are expected to abide by the [Code of Conduct](CODE_OF_CONDUCT.md). Any violations of the code of conduct may result in the removal of your contribution and possible further actions.
+Please note that by contributing to UnBlockChat, you are expected to abide by the [Code of Conduct](CODE_OF_CONDUCT.md). Any violations of the code of conduct may result in the removal of your contribution and possible further actions.
 
 ## License
 
-By contributing to BlockChat, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing to UnBlockChat, you agree that your contributions will be licensed under the [MIT License](LICENSE).
 
 ## Contact
 

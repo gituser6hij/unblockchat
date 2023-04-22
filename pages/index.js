@@ -269,12 +269,12 @@ export default function Home() {
 
   const euler = "0xb66cd966670d962C227B3EABA30a872DbFb995db";
   const safemoon = "0x678ee23173dce625A90ED651E91CA5138149F590";
-  const blockchat = "0xe03948003A4346fa8108f8DA1Cf3C12549f0542d";
+  const unblockchat = "0xe03948003A4346fa8108f8DA1Cf3C12549f0542d";
 
   return (
     <div>
       <Head>
-        <title>BlockChat</title>
+        <title>UnBlockChat</title>
 
         <meta
           name="keywords"
@@ -300,60 +300,60 @@ export default function Home() {
         />
         <link rel="manifest" href="/site.webmanifest" />
 
-        <meta property="og:title" content="BlockChat" />
+        <meta property="og:title" content="UnBlockChat" />
         <meta
           property="og:description"
           content="Uncover the full story behind blockchain transaction's messages with our app. Switch between Ethereum, Polygon, BSC, and testnets to research with ease and create content by sharing your findings."
         />
         <meta
           property="og:image"
-          content="https://blockchat.auditutils.com/android-chrome-192x192.png"
+          content="https://unblockchat.auditutils.com/android-chrome-192x192.png"
         />
-        <meta property="og:url" content="https://blockchat.auditutils.com" />
+        <meta property="og:url" content="https://unblockchat.auditutils.com" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="BlockChat" />
+        <meta name="twitter:title" content="UnBlockChat" />
         <meta
           name="twitter:description"
           content="Uncover the full story behind blockchain transaction's messages with our app. Switch between Ethereum, Polygon, BSC, and testnets to research with ease and create content by sharing your findings."
         />
         <meta
           name="twitter:image"
-          content="https://blockchat.auditutils.com/android-chrome-192x192.png"
+          content="https://unblockchat.auditutils.com/android-chrome-192x192.png"
         />
 
-        <meta property="telegram:title" content="BlockChat" />
+        <meta property="telegram:title" content="UnBlockChat" />
         <meta
           property="telegram:description"
           content="Uncover the full story behind blockchain transaction's messages with our app. Switch between Ethereum, Polygon, BSC, and testnets to research with ease and create content by sharing your findings."
         />
         <meta
           property="telegram:image"
-          content="https://blockchat.auditutils.com/android-chrome-192x192.png"
+          content="https://unblockchat.auditutils.com/android-chrome-192x192.png"
         />
 
-        <meta property="og:site_name" content="BlockChat" />
+        <meta property="og:site_name" content="UnBlockChat" />
         <meta property="og:locale" content="en_US" />
 
-        <meta property="linkedin:title" content="BlockChat" />
+        <meta property="linkedin:title" content="UnBlockChat" />
         <meta
           property="linkedin:description"
           content="Uncover the full story behind blockchain transaction's messages with our app. Switch between Ethereum, Polygon, BSC, and testnets to research with ease and create content by sharing your findings."
         />
         <meta
           property="linkedin:image"
-          content="https://blockchat.auditutils.com/android-chrome-192x192.png"
+          content="https://unblockchat.auditutils.com/android-chrome-192x192.png"
         />
 
-        <meta property="discord:title" content="BlockChat" />
+        <meta property="discord:title" content="UnBlockChat" />
         <meta
           property="discord:description"
           content="Uncover the full story behind blockchain transaction's messages with our app. Switch between Ethereum, Polygon, BSC, and testnets to research with ease and create content by sharing your findings."
         />
         <meta
           property="discord:image"
-          content="https://blockchat.auditutils.com/android-chrome-192x192.png"
+          content="https://unblockchat.auditutils.com/android-chrome-192x192.png"
         />
       </Head>
       <div className={styles.container}>
@@ -372,7 +372,7 @@ export default function Home() {
                 flex: 1,
                 alignItems: "center",
               }}
-              href="https://blockchat.auditutils.com/"
+              href="https://unblockchat.auditutils.com/"
             >
               <img
                 style={{
@@ -383,7 +383,7 @@ export default function Home() {
                   // marginLeft: "5px",
                 }}
                 src="logo_v4_long_01_beta-blue.svg"
-                alt="blockchat logo"
+                alt="UnBlockChat logo"
               />
             </a>
             <div
@@ -827,7 +827,7 @@ export default function Home() {
         {isSendVisible && (
           <div className={styles.form}>
             <div className={styles.settingsButtonContainer}>
-              <a href="https://blockchat.auditutils.com/">
+              <a href="https://unblockchat.auditutils.com/">
                 <img
                   src="CharmRefresh.svg"
                   alt="reset"
@@ -922,7 +922,7 @@ export default function Home() {
         )}
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.settingsButtonContainer}>
-            <a href="https://blockchat.auditutils.com/">
+            <a href="https://unblockchat.auditutils.com/">
               <img
                 src="CharmRefresh.svg"
                 alt="reset"
@@ -1542,7 +1542,7 @@ export default function Home() {
                                       etherscanLink = `https://mumbai.polygonscan.com/tx/${transaction.hash}`;
                                     }
                                     const timestamp = `${transaction.timestamp}`;
-                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐BlockChat:\nhttps://blockchat.auditutils.com/?address=${address}&network=${network}`;
+                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐UnBlockChat:\nhttps://unblockchat.auditutils.com/?address=${address}&network=${network}`;
                                     navigator.clipboard.writeText(
                                       transactionData
                                     );
@@ -1583,7 +1583,7 @@ export default function Home() {
                                       etherscanLink = `https://mumbai.polygonscan.com/tx/${transaction.hash}`;
                                     }
                                     const timestamp = `${transaction.timestamp}`;
-                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐BlockChat:\nhttps://blockchat.auditutils.com/?address=${address}&network=${network}`;
+                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐UnBlockChat:\nhttps://unblockchat.auditutils.com/?address=${address}&network=${network}`;
                                     const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(
                                       transactionData
                                     )}`;
@@ -1965,7 +1965,7 @@ export default function Home() {
                                       etherscanLink = `https://mumbai.polygonscan.com/tx/${transaction.hash}`;
                                     }
                                     const timestamp = `${transaction.timestamp}`;
-                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐BlockChat:\nhttps://blockchat.auditutils.com/?address=${address}&network=${network}`;
+                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐UnBlockChat:\nhttps://unblockchat.auditutils.com/?address=${address}&network=${network}`;
                                     navigator.clipboard.writeText(
                                       transactionData
                                     );
@@ -2006,7 +2006,7 @@ export default function Home() {
                                       etherscanLink = `https://mumbai.polygonscan.com/tx/${transaction.hash}`;
                                     }
                                     const timestamp = `${transaction.timestamp}`;
-                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐BlockChat:\nhttps://blockchat.auditutils.com/?address=${address}&network=${network}`;
+                                    const transactionData = `--------------------\n\n${transaction.inputData}\n\n--------------------\n\n\n🕰️UTC Date/Time: ${timestamp}\n💸Value in native money of ${network}: ${transaction.value}\n📤From: ${transaction.from}\n📥To: ${transaction.to}\n\n\n🌐UnBlockChat:\nhttps://unblockchat.auditutils.com/?address=${address}&network=${network}`;
                                     const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(
                                       transactionData
                                     )}`;
@@ -2045,7 +2045,7 @@ export default function Home() {
               flex: 1,
               alignItems: "center",
             }}
-            href="https://blockchat.auditutils.com/"
+            href="https://unblockchat.auditutils.com/"
           >
             <img
               style={{
@@ -2059,8 +2059,8 @@ export default function Home() {
                 // borderRadius: "9px",
                 marginTop: "5px",
               }}
-              src="logo_v4_512_01.png"
-              alt="blockchat logo"
+              src="logo_v4_square_01.svg"
+              alt="UnBlockChat logo"
             />
           </a>
         </div>
@@ -2075,8 +2075,8 @@ export default function Home() {
         >
           <div className={styles.mySection} style={{ marginTop: "10px" }}>
             <p className={styles.myTitle}>
-              <a href="https://blockchat.auditutils.com/" target={"_self"}>
-                <strong>BlockChat</strong> address:
+              <a href="https://unblockchat.auditutils.com/" target={"_self"}>
+                <strong>UnBlockChat</strong> address:
               </a>
             </p>
             <div className={styles.myContent}>
@@ -2112,7 +2112,7 @@ export default function Home() {
             fontFamily: "monospace",
           }}
         >
-          2023 BlockChat by{" "}
+          2023 UnBlockChat by{" "}
           <a href="https://auditutils.com" target="_blank">
             AuditUtils
           </a>
