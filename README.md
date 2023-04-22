@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/gituser6hij/block-chat-app/blob/main/public/logo_v4_long_01_beta-blue.svg" alt="BlockChat Logo">
+<img src="https://github.com/gituser6hij/unblockchat/blob/main/public/logo_v4_long_01_beta-blue.svg" alt="BlockChat Logo">
 </div>
 
 # UnBlockChat

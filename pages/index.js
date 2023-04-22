@@ -2153,7 +2153,7 @@ export default function Home() {
             // padding: "20px",
           }}
         >
-          <a href="https://github.com/gituser6hij/block-chat-app">
+          <a href="https://github.com/gituser6hij/unblockchat">
             <img
               className={styles["profile-image-au"]}
               src="CarbonLogoGithub.svg"
