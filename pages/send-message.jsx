@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Web3 from "web3";
-import styles from "./styles.module.css";
+import styles from "@/styles/Home.module.css";
 
 function SendMessage() {
   const [recipient, setRecipient] = useState("");
@@ -26,7 +26,31 @@ function SendMessage() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    // <div
+    //   style={{
+    //     display: "flex",
+    //     flexDirection: "column",
+    //     alignItems: "center",
+    //     marginTop: "10px",
+    //     width: "100%",
+    //   }}
+    // >
+
+    // </div>
+
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        backgroundColor: "transparent",
+        width: "100%",
+        flexDirection: "column",
+        marginTop: "0px",
+        padding: "0 0",
+        // height: "50px",
+      }}
+    >
       <div
         style={{
           display: "flex",
