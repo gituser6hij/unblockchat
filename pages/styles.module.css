@@ -513,14 +513,15 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .myTitle {
   text-align: left;
   font-family: monospace;
   /* margin-top: 0px; */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 1.3em;
   padding-top: 5px;
 }
@@ -574,7 +575,7 @@
 }
 
 .myHr {
-  margin: 10px 0;
+  margin: 12px 0;
   border: none;
   border-top: 3px solid rgba(10, 202, 166, 0.9);
 }
@@ -584,18 +585,10 @@
   font-size: 0.9em;
   width: auto;
   margin: 0;
-  margin-top: -10px;
   text-align: start;
 }
 
 .myDropdown {
-  /* margin-top: 60px;
-  background-color: transparent;
-  max-width: 50%;
-
-  flex-direction: column;
-  */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -620,18 +613,10 @@
 
 .myBtn {
   display: flex-end;
-  /* display: flex; */
-  /* position: fixed;
-  bottom: 10%;
-  right: 3px; */
+
   z-index: 99;
-  /* font-size: 18px; */
-  /* border: none;
-  outline: none;
-  background-color: red;
-  color: white; */
+
   cursor: pointer;
-  /* padding: 0px; */
 }
 
 .myBtn img {
@@ -705,16 +690,13 @@
 
 .settingsArea {
   background-color: transparent;
-  /* padding: 10px; */
   margin-top: 10px;
-  /* border: 3px solid rgba(10, 202, 166, 0.9);
-  border-radius: 15px; */
+
   height: auto;
   width: 100%;
   font-family: monospace;
-  /* text-align: left; */
+
   color: #00ffff;
-  /* font-size: 1.2em; */
 }
 
 .settingsArea div {
@@ -776,12 +758,6 @@
   width: 100%;
 }
 
-/* @media screen and (max-width: 767px) {
-  .NewTitleContainer {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-} */
 .NewTitleContainer .settingsButton {
   display: flex;
   justify-content: center;
@@ -803,7 +779,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .connectedAddress {
@@ -812,16 +788,16 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
   background-color: #282c33ff;
   width: auto;
   height: auto;
 }
 
 .connectedAddress p {
-  margin: 5px;
+  margin: 6px;
   word-wrap: break-word;
   color: #00ffff;
 }

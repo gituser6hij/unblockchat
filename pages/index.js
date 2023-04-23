@@ -216,14 +216,13 @@ export default function Home() {
     const gifs = ["loading_blocks.gif", "loading_blocks.gif"];
     const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
     setGif(randomGif);
-    // Your code to handle the button click goes here
   }
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
     setIsSendVisible(false);
     setIsClicked(false);
-    setIsExplorerVisible(false);
+    setIsExplorerVisible(isDropdownOpen ? true : false);
   };
 
   const toggleExplorer = () => {
@@ -397,11 +396,9 @@ export default function Home() {
             >
               <img
                 style={{
-                  maxWidth: "240px",
+                  maxWidth: "196px",
                   width: "100%",
                   margin: "0px",
-                  // padding: "5px 0",
-                  // marginLeft: "5px",
                 }}
                 src="logo_v4_long_01_beta-blue.svg"
                 alt="UnBlockChat logo"
@@ -415,7 +412,7 @@ export default function Home() {
                 justifyContent: "space-between",
                 height: "100%",
                 width: "100%",
-                maxWidth: "80px", // <-- reduced max width
+                maxWidth: "80px",
               }}
             >
               <button
@@ -439,7 +436,7 @@ export default function Home() {
           style={{
             display: "flex",
             flexDirection: "row",
-            marginTop: "5px",
+            marginTop: "12px",
             justifyContent: "space-between",
             textAlign: "center",
           }}
@@ -596,6 +593,8 @@ export default function Home() {
                 </button>
               </div>
             </div>
+            <hr className={styles.myHr} />
+
             <div>
               <p className={styles.myTitle}>
                 <a href="https://rekt.news/safemoon-rekt/" target={"_blank"}>
@@ -2132,14 +2131,12 @@ export default function Home() {
             <img
               style={{
                 maxWidth: "120px",
-                // marginTop: "30px",
                 padding: "0px",
                 textAlign: "center",
                 flex: 1,
                 alignItems: "center",
-                // backgroundColor: "#282c33ff",
-                // borderRadius: "9px",
-                marginTop: "5px",
+
+                marginTop: "12px",
               }}
               src="logo_v4_square_01.svg"
               alt="UnBlockChat logo"
@@ -2151,11 +2148,11 @@ export default function Home() {
           className={styles.myContainer}
           style={{
             backgroundColor: "transparent",
-            marginTop: "10px",
-            padding: "0px 10px",
+            marginTop: "12px",
+            padding: "0px 12px",
           }}
         >
-          <div className={styles.mySection} style={{ marginTop: "10px" }}>
+          <div className={styles.mySection}>
             <p className={styles.myTitle}>
               <a href="https://unblockchat.auditutils.com/" target={"_self"}>
                 <strong>UnBlockChat</strong> address:
@@ -2190,7 +2187,7 @@ export default function Home() {
           style={{
             flex: 1,
             textAlign: "center",
-            marginTop: "10px",
+            marginTop: "90px",
             fontFamily: "monospace",
           }}
         >
@@ -2199,40 +2196,12 @@ export default function Home() {
             AuditUtils
           </a>
         </h3>
-        {/* <p
-          style={{
-            color: "#00ffff",
-            marginTop: "60px",
-            textAlign: "end",
-            fontFamily: "monospace",
-          }}
-        >
-          <button
-            onClick={handleHelpClick4}
-            type="button"
-            style={{
-              all: "unset", // Reset all styles
-              marginLeft: "3px",
-              cursor: "pointer",
-              // Adjust the margin as needed
-            }}
-          >
-            <img
-              src="CarbonEmail (1).svg"
-              alt="Contact"
-              style={{ height: "48px" }}
-            />
-          </button>
-        </p> */}
 
         <div
-          // className={styles.header}
           style={{
-            // display: "flex",
             alignItems: "center",
-            marginTop: "60px",
+            marginTop: "12px",
             textAlign: "center",
-            // padding: "20px",
           }}
         >
           <a href="https://github.com/gituser6hij/unblockchat">
