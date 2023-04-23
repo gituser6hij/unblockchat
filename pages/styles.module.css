@@ -106,8 +106,9 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
   color: #00ffff;
+  background-color: #282c33ff;
 }
 
 .form textarea {
@@ -200,7 +201,7 @@
   background-color: var(--gunmetal);
   color: #fff;
   border: 3px solid rgba(10, 202, 166, 0.9);
-  font-size: 1.3em;
+  font-size: 1.2em;
   max-width: 600px;
 }
 
@@ -279,12 +280,46 @@
   font-size: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: auto;
+
+  background-color: #282c33ff;
 }
 
 .inputText:focus {
   outline: none;
+  background-color: #282c33ff;
+
   box-shadow: 0 0 5px rgba(10, 202, 166, 0.5);
   /* background-color: rgba(10, 202, 166, 0.9); */
+}
+
+.form input :-internal-autofill-selected {
+  background-color: #282c33ff;
+}
+
+.input:-internal-autofill-selected {
+  background-color: #282c33ff;
+}
+
+.input:-internal-autofill {
+  background-color: #282c33ff !important;
+}
+
+.inputText:active {
+  background-color: #282c33ff !important;
+}
+
+.inputText:selected {
+  background-color: #282c33ff !important;
+}
+
+.input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(
+    #282c33ff,
+    rgba(70, 90, 126, 0.4)
+  ) !important;
+  color: fieldtext !important;
 }
 
 /* Navigation bar styles */

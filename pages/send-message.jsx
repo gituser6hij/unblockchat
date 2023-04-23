@@ -76,7 +76,7 @@ function SendMessage() {
           onChange={(e) => setRecipient(e.target.value)}
           className={styles.inputText}
           placeholder="To: 0x..."
-          style={{ width: "100%" }}
+          style={{ width: "100%", backgroundColor: "#282c33ff" }}
         />
       </div>
       <div
@@ -100,7 +100,11 @@ function SendMessage() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className={styles.inputText}
-          style={{ width: "100%", minHeight: "90px" }}
+          style={{
+            width: "100%",
+            minHeight: "90px",
+            backgroundColor: "#282c33ff",
+          }}
           placeholder="..."
         />
       </div>
