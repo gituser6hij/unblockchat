@@ -48,7 +48,7 @@ function SwitchNetwork({ setAddress3 }) {
           backgroundColor: "transparent",
           width: "100%",
           flexDirection: "row",
-          marginTop: "9px",
+          marginTop: "6px",
           padding: "0 0",
           // height: "50px",
         }}
@@ -58,15 +58,15 @@ function SwitchNetwork({ setAddress3 }) {
           value={chainId}
           onChange={handleNetworkChange}
           style={{
-            padding: "10px 5px",
+            padding: "8px 4px",
             marginRight: "30px",
             // backgroundColor: "#282c33",
             borderRadius: "15px",
             border: "3px solid #0acaa6",
-            fontFamily: "monospace",
-            fontSize: "1.1em",
+            // fontFamily: "monospace",
+            fontSize: "1em",
             marginTop: "0",
-            maxWidth: "50%",
+            maxWidth: "60%",
           }}
         >
           <option value="0x1">Ethereum</option>
@@ -87,13 +87,14 @@ function SwitchNetwork({ setAddress3 }) {
           style={{
             backgroundColor: "#282c33",
             color: "#00ffff",
-            fontFamily: "monospace",
-            fontSize: "1.1em",
+            // fontFamily: "monospace",
+            fontSize: "1em",
             fontWeight: "bold",
             borderRadius: "15px",
-            padding: "10px 5px",
+            padding: "8px 4px",
             border: "3px solid #0acaa6",
             marginTop: "0",
+            maxWidth: "30%",
           }}
         >
           Switch Network

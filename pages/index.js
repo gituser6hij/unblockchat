@@ -927,14 +927,15 @@ export default function Home() {
                       />
                     </button>
                   )}
-                  <p>Connected</p>
                   {isSendHelpClick2Visible && (
                     <SwitchNetwork setAddress3={setAddress3} />
                   )}
+                  <p style={{ marginTop: "12px" }}>Connected</p>
+
                   <p
                     style={{
                       color: "#ccc",
-                      marginTop: "5px",
+                      marginTop: "6px",
                     }}
                   >
                     From:
