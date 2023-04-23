@@ -423,7 +423,7 @@ export default function Home() {
                 onClick={toggleDropdown}
                 style={{
                   margin: "auto",
-                  padding: "15px 5px",
+                  padding: "12px 8px",
                 }}
               >
                 Examples
@@ -452,6 +452,7 @@ export default function Home() {
               // marginRight: "5px",
               textAlign: "center",
               maxWidth: "30%",
+              padding: "12px",
             }}
           >
             Explore
@@ -463,6 +464,7 @@ export default function Home() {
               cursor: "pointer",
               textAlign: "center",
               maxWidth: "30%",
+              padding: "12px",
             }}
           >
             Isolate
@@ -475,6 +477,7 @@ export default function Home() {
               // marginLeft: "5px",
               textAlign: "center",
               maxWidth: "30%",
+              padding: "12px",
             }}
           >
             Send

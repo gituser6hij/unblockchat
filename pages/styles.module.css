@@ -28,8 +28,9 @@
 .container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 15px;
-  width: 99vw;
+  padding: 20px;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .containerSend {
