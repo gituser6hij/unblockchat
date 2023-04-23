@@ -66,7 +66,7 @@ function SendMessage() {
           padding: "0",
         }}
       >
-        <p htmlFor="recipient" style={{ marginTop: "15px" }}>
+        <p htmlFor="recipient" style={{ marginTop: "10px" }}>
           Enter recipient address:
         </p>
         <input

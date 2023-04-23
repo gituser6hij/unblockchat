@@ -908,36 +908,31 @@ export default function Home() {
                     wordWrap: "break-word",
                   }}
                 >
-                  <p>
-                    Connected
-                    {isSendHelpClick1Visible && (
-                      <button
-                        onClick={handleSendHelpClick2}
-                        type="button"
-                        style={{
-                          all: "unset", // Reset all styles
-                          marginLeft: "40%",
-                          cursor: "pointer",
-
-                          // Adjust the margin as needed
-                        }}
-                      >
-                        <img
-                          src="CarbonSettings.svg"
-                          alt="help"
-                          style={{ height: "20px" }}
-                        />
-                      </button>
-                    )}
-                  </p>
+                  {isSendHelpClick1Visible && (
+                    <button
+                      onClick={handleSendHelpClick2}
+                      type="button"
+                      style={{
+                        all: "unset", // Reset all styles
+                        marginLeft: "0px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <img
+                        src="CarbonSettings.svg"
+                        alt="help"
+                        style={{ height: "20px" }}
+                      />
+                    </button>
+                  )}
+                  <p>Connected</p>
                   {isSendHelpClick2Visible && (
                     <SwitchNetwork setAddress3={setAddress3} />
                   )}
                   <p
                     style={{
                       color: "#ccc",
-                      textAlign: "start",
-                      marginTop: "10px",
+                      marginTop: "5px",
                     }}
                   >
                     From:
@@ -948,8 +943,9 @@ export default function Home() {
                       marginTop: "0px",
                       border: "3px solid #0acaa6e6",
                       borderRadius: "15px",
-                      padding: "5px",
+                      padding: "10px",
                       width: "100%",
+                      backgroundColor: "#282c33ff",
                     }}
                   >
                     {address3}

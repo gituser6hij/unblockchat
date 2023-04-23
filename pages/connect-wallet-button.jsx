@@ -48,7 +48,7 @@ function ConnectWalletButton({ setAddress3 }) {
         backgroundColor: "transparent",
         width: "100%",
         flexDirection: "row",
-        marginTop: "6px",
+        marginTop: "0px",
         padding: "0 0",
         height: "50px",
       }}
