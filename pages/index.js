@@ -930,7 +930,19 @@ export default function Home() {
                   {isSendHelpClick2Visible && (
                     <SwitchNetwork setAddress3={setAddress3} />
                   )}
-                  <p style={{ marginTop: "12px" }}>Connected</p>
+                  <p
+                    style={{
+                      marginTop: "12px",
+                      backgroundColor: "#ffd700ff",
+                      border: "3px solid #0acaa6e6",
+                      borderRadius: "15px",
+                      padding: "10px",
+                      fontWeight: "bold",
+                      color: "#282c33ff",
+                    }}
+                  >
+                    Connected
+                  </p>
 
                   <p
                     style={{
@@ -949,6 +961,10 @@ export default function Home() {
                       padding: "10px",
                       width: "100%",
                       backgroundColor: "#282c33ff",
+                      color: "#ffd700ff",
+                      fontSize: "1em",
+                      textAlign: "start",
+                      // fontFamily: "monospace",
                     }}
                   >
                     {address3}

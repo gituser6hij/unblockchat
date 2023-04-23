@@ -58,7 +58,7 @@ function ConnectWalletButton({ setAddress3 }) {
         value={chainId}
         onChange={handleNetworkChange}
         style={{
-          padding: "8px 4px",
+          padding: "12px 4px",
           marginRight: "30px",
           // backgroundColor: "#282c33",
           borderRadius: "15px",
@@ -66,7 +66,7 @@ function ConnectWalletButton({ setAddress3 }) {
           // fontFamily: "monospace",
           fontSize: "1em",
           marginTop: "0",
-          maxWidth: "55%",
+          // maxWidth: "60%",
         }}
       >
         <option value="0x1">Ethereum</option>
@@ -84,17 +84,17 @@ function ConnectWalletButton({ setAddress3 }) {
       </select>
       <button
         onClick={handleClick}
+        className={styles.connectButton}
         style={{
-          backgroundColor: "#282c33",
           color: "#00ffff",
           // fontFamily: "monospace",
           fontSize: "1em",
           fontWeight: "bold",
           borderRadius: "15px",
-          padding: "8px 4px",
+          padding: "12px 4px",
           border: "3px solid #0acaa6",
           marginTop: "0",
-          maxWidth: "45%",
+          // maxWidth: "30%",
         }}
       >
         Connect Wallet

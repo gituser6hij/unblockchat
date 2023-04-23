@@ -874,3 +874,12 @@
 .formSend {
   background-color: #ccc;
 }
+
+.connectButton {
+  background-color: "#282c33";
+}
+
+.connectButton:hover hover {
+  background-color: #0acaa6;
+  color: #282c33;
+}
