@@ -501,8 +501,9 @@
 
 .myContainer {
   margin-top: 20px;
-  background-color: #282c33ff;
-  padding: 3px 20px;
+  background-color: rgba(40, 44, 51, 0.5);
+
+  padding: 4px 12px;
   border-radius: 15px;
   border: 3px solid rgba(10, 202, 166, 0.9);
   width: auto;
@@ -539,7 +540,7 @@
 }
 
 .myContainer div {
-  margin-top: 5px;
+  /* margin-top: 5px; */
   width: 100%;
   max-width: 600px;
 }
@@ -563,8 +564,9 @@
   font-family: monospace;
   /* margin-top: 0px; */
   /* margin-bottom: 10px; */
-  font-size: 1.3em;
-  padding-top: 5px;
+  font-size: 1.1em;
+  /* padding-top: 5px; */
+  /* padding: 4px 12px; */
 }
 
 .myContent {
@@ -575,6 +577,7 @@
   margin-left: auto;
   margin-top: 0px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 .myParagraph {
@@ -583,7 +586,7 @@
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .myButton {
@@ -597,8 +600,8 @@
 }
 
 .myImage {
-  height: 32px;
-  margin-left: 10px;
+  height: 24px;
+  margin-left: 6px;
 }
 
 .myResetImage {
@@ -618,12 +621,12 @@
 .myHr {
   margin: 12px 0;
   border: none;
-  border-top: 3px solid rgba(10, 202, 166, 0.9);
+  border-top: 2px solid rgba(10, 202, 166, 0.9);
 }
 
 .myAddress {
   word-break: break-all;
-  font-size: 0.9em;
+  font-size: 0.8em;
   width: auto;
   margin: 0;
   text-align: start;

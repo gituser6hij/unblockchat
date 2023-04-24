@@ -599,21 +599,54 @@ export default function Home() {
         )}
         {isDropdownOpen && (
           <div className={styles.myContainer}>
-            <div style={{ marginTop: "0px" }}>
+            <div style={{ marginTop: "6px", paddingLeft: "10px" }}>
               <ul className={styles.myTitle}>
                 <li>
-                  click <img src="CarbonUserProfile.svg" width="18px" /> to
-                  replace the primary address{" "}
+                  click <img src="CarbonUserProfile.svg" width="12px" /> to read
+                  the address messages{" "}
                 </li>
-                <hr className={styles.myHr} />
+                {/* <hr className={styles.myHr} /> */}
 
                 <li>
-                  click on &quot;<strong>Titles</strong>&quot; to get articles{" "}
+                  click on &quot;<strong>Title</strong>&quot; to get an article
+                  link{" "}
                 </li>
               </ul>
               <hr className={styles.myHr} />
             </div>
+            <div>
+              <p className={styles.myTitle}>
+                <a href="https://twitter.com/VitalikButerin" target={"_blank"}>
+                  <strong>Vitalik Buterin</strong>
+                </a>{" "}
+                Ethereum creator:
+              </p>
+              <div className={styles.myContent}>
+                <p className={styles.myAddress}>
+                  0xd8da6bf26964af9d7eed9e03e53415d37aa96045
+                </p>
 
+                <button
+                  onClick={(event) => {
+                    const searchParams = new URLSearchParams();
+                    searchParams.set(
+                      "address",
+                      "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+                    );
+                    searchParams.set("network", "polygon-zkevm");
+                    window.location.href = `?${searchParams.toString()}`;
+                  }}
+                  className={styles.myButton}
+                >
+                  <img
+                    src="CarbonUserProfile.svg"
+                    alt="Scan address"
+                    className={styles.myImage}
+                  />
+                </button>
+              </div>
+            </div>
+            <hr className={styles.myHr} />
             <div>
               <p className={styles.myTitle}>
                 <a
@@ -624,7 +657,9 @@ export default function Home() {
                 </a>
                 exploiter address:
               </p>
+
               <div className={styles.myContent}>
+                {" "}
                 <p className={styles.myAddress}>
                   0xb66cd966670d962C227B3EABA30a872DbFb995db
                 </p>
@@ -648,6 +683,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
+
             <hr className={styles.myHr} />
 
             <div>
@@ -684,6 +720,7 @@ export default function Home() {
             </div>
 
             <hr className={styles.myHr} />
+
             <div>
               <p className={styles.myTitle}>
                 <a href="https://rekt.news/wormhole-rekt/" target={"_blank"}>
@@ -866,40 +903,6 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <hr className={styles.myHr} />
-            <div>
-              <p className={styles.myTitle}>
-                <a href="https://twitter.com/VitalikButerin" target={"_blank"}>
-                  <strong>Vitalik Buterin</strong>
-                </a>{" "}
-                Ethereum creator:
-              </p>
-              <div className={styles.myContent}>
-                <p className={styles.myAddress}>
-                  0xd8da6bf26964af9d7eed9e03e53415d37aa96045
-                </p>
-
-                <button
-                  onClick={(event) => {
-                    const searchParams = new URLSearchParams();
-                    searchParams.set(
-                      "address",
-                      "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
-                    );
-                    searchParams.set("network", "polygon-zkevm");
-                    window.location.href = `?${searchParams.toString()}`;
-                  }}
-                  className={styles.myButton}
-                >
-                  <img
-                    src="CarbonUserProfile.svg"
-                    alt="Scan address"
-                    className={styles.myImage}
-                  />
-                </button>
-              </div>
-            </div>
-            <hr className={styles.myHr} />
           </div>
         )}
         {isSendVisible && (
