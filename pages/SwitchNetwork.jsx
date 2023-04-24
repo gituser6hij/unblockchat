@@ -54,7 +54,7 @@ function SwitchNetwork({ setAddress3 }) {
         }}
       >
         <select
-          className="networkSelect"
+          className={styles.networkSelect}
           value={chainId}
           onChange={handleNetworkChange}
           style={{
@@ -84,6 +84,7 @@ function SwitchNetwork({ setAddress3 }) {
         </select>
         <button
           onClick={handleSwitch}
+          className={styles.connectButton}
           style={{
             backgroundColor: "#282c33",
             color: "#00ffff",

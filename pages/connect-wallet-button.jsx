@@ -54,7 +54,7 @@ function ConnectWalletButton({ setAddress3 }) {
       }}
     >
       <select
-        className="networkSelect"
+        className={styles.networkSelect}
         value={chainId}
         onChange={handleNetworkChange}
         style={{

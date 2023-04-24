@@ -412,7 +412,7 @@ export default function Home() {
                 justifyContent: "space-between",
                 height: "100%",
                 width: "100%",
-                maxWidth: "80px",
+                maxWidth: "90px",
               }}
             >
               <button
@@ -421,9 +421,18 @@ export default function Home() {
                 style={{
                   margin: "auto",
                   padding: "12px 8px",
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
-                Examples
+                <span style={{ flex: 1 }}>Explore</span>
+                <img
+                  src="CarbonIbmWatsonDiscovery.svg"
+                  alt="help"
+                  style={{ height: "20px", flex: 0, marginLeft: "6px" }}
+                />
               </button>
             </div>
           </div>
@@ -439,6 +448,7 @@ export default function Home() {
             marginTop: "12px",
             justifyContent: "space-between",
             textAlign: "center",
+            alignItems: "center",
           }}
         >
           <button
@@ -450,9 +460,18 @@ export default function Home() {
               textAlign: "center",
               maxWidth: "30%",
               padding: "12px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            Explore
+            <span style={{ flex: 1 }}>Read</span>
+            <img
+              src="CarbonUserProfile.svg"
+              alt="help"
+              style={{ height: "20px", flex: 0 }}
+            />
           </button>
           <button
             className={styles.settingsButton}
@@ -462,9 +481,18 @@ export default function Home() {
               textAlign: "center",
               maxWidth: "30%",
               padding: "12px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            Isolate
+            <span style={{ flex: 1 }}>Isolate</span>
+            <img
+              src="CarbonCollaborate.svg"
+              alt="help"
+              style={{ height: "20px", flex: 0 }}
+            />
           </button>
           <button
             className={styles.settingsButton}
@@ -475,9 +503,18 @@ export default function Home() {
               textAlign: "center",
               maxWidth: "30%",
               padding: "12px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            Send
+            <span style={{ flex: 1 }}>Send</span>
+            <img
+              src="CarbonMailAll.svg"
+              alt="help"
+              style={{ height: "20px", flex: 0 }}
+            />
           </button>
         </div>
 
@@ -518,12 +555,12 @@ export default function Home() {
               </p>
               <ul>
                 <li>
-                  click <img src="CarbonZoomFit.svg" width="18px" /> to replace
-                  the primary address{" "}
+                  click <img src="CarbonUserProfile.svg" width="18px" /> to
+                  replace the primary address{" "}
                 </li>
                 <li>
-                  click <img src="CarbonZoomIn.svg" width="18px" /> to place a
-                  secondary address{" "}
+                  click <img src="CarbonCollaborate.svg" width="18px" /> to
+                  place a secondary address{" "}
                 </li>
                 <li>
                   click <img src="CarbonCopy.svg" width="18px" /> to copy to
@@ -535,7 +572,7 @@ export default function Home() {
                 </li>
 
                 <li>
-                  click <img src="telegram.png" width="18px" /> to share on
+                  click <img src="CarbonSendAlt.svg" width="18px" /> to share on
                   Telegram{" "}
                 </li>
               </ul>
@@ -547,8 +584,8 @@ export default function Home() {
             <div style={{ marginTop: "0px" }}>
               <ul className={styles.myTitle}>
                 <li>
-                  click <img src="CarbonZoomFit.svg" width="18px" /> to replace
-                  the primary address{" "}
+                  click <img src="CarbonUserProfile.svg" width="18px" /> to
+                  replace the primary address{" "}
                 </li>
                 <hr className={styles.myHr} />
 
@@ -586,7 +623,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -620,7 +657,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -654,7 +691,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -687,7 +724,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -723,7 +760,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -756,7 +793,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -780,7 +817,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -804,7 +841,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -837,7 +874,7 @@ export default function Home() {
                   className={styles.myButton}
                 >
                   <img
-                    src="CarbonZoomFit.svg"
+                    src="CarbonUserProfile.svg"
                     alt="Scan address"
                     className={styles.myImage}
                   />
@@ -1393,7 +1430,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomFit.svg"
+                                src="CarbonUserProfile.svg"
                                 alt="Set primary address"
                                 style={{ height: "20px" }}
                               />
@@ -1412,7 +1449,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomIn.svg"
+                                src="CarbonCollaborate.svg"
                                 alt="add secondary address"
                                 style={{ height: "20px" }}
                               />
@@ -1505,7 +1542,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomFit.svg"
+                                src="CarbonUserProfile.svg"
                                 alt="Set primary address"
                                 style={{ height: "20px" }}
                               />
@@ -1525,7 +1562,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomIn.svg"
+                                src="CarbonCollaborate.svg"
                                 alt="add secondary address"
                                 style={{ height: "20px" }}
                               />
@@ -1691,11 +1728,11 @@ export default function Home() {
                                     border: "none",
                                     background: "none",
                                     cursor: "pointer",
-                                    marginLeft: "20px",
+                                    marginLeft: "10px",
                                   }}
                                 >
                                   <img
-                                    src="telegram.png"
+                                    src="CarbonSendAlt.svg"
                                     alt="Share on Telegram"
                                     style={{ height: "20px" }}
                                   />
@@ -1815,7 +1852,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomFit.svg"
+                                src="CarbonUserProfile.svg"
                                 alt="Set primary address"
                                 style={{ height: "20px" }}
                               />
@@ -1834,7 +1871,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomIn.svg"
+                                src="CarbonCollaborate.svg"
                                 alt="add secondary address"
                                 style={{ height: "20px" }}
                               />
@@ -1928,7 +1965,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomFit.svg"
+                                src="CarbonUserProfile.svg"
                                 alt="Set primary address"
                                 style={{ height: "20px" }}
                               />
@@ -1948,7 +1985,7 @@ export default function Home() {
                               }}
                             >
                               <img
-                                src="CarbonZoomIn.svg"
+                                src="CarbonCollaborate.svg"
                                 alt="add secondary address"
                                 style={{ height: "20px" }}
                               />
@@ -2114,11 +2151,11 @@ export default function Home() {
                                     border: "none",
                                     background: "none",
                                     cursor: "pointer",
-                                    marginLeft: "20px",
+                                    marginLeft: "10px",
                                   }}
                                 >
                                   <img
-                                    src="telegram.png"
+                                    src="CarbonSendAlt.svg"
                                     alt="Share on Telegram"
                                     style={{ height: "20px" }}
                                   />
@@ -2192,7 +2229,7 @@ export default function Home() {
                 className={styles.myButton}
               >
                 <img
-                  src="CarbonZoomFit.svg"
+                  src="CarbonUserProfile.svg"
                   alt="Copy address"
                   className={styles.myImage}
                 />
