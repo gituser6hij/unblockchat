@@ -412,7 +412,7 @@ export default function Home() {
                 justifyContent: "space-between",
                 height: "100%",
                 width: "100%",
-                maxWidth: "90px",
+                maxWidth: "128px",
               }}
             >
               <button
@@ -431,7 +431,7 @@ export default function Home() {
                 <img
                   src="CarbonIbmWatsonDiscovery.svg"
                   alt="help"
-                  style={{ height: "20px", flex: 0, marginLeft: "6px" }}
+                  style={{ height: "20px", flex: 0, marginLeft: "0px" }}
                 />
               </button>
             </div>
