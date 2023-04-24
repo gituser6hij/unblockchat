@@ -20,8 +20,12 @@ function SendMessage() {
     try {
       const result = await web3.eth.sendTransaction(tx);
       console.log(result);
+      // Update the front end with the result status
+      alert(`Transaction successful! Status: ${result.status}`);
     } catch (error) {
       console.error(error);
+      // Update the front end with the error message
+      alert(`Transaction failed: ${error.message}`);
     }
   }
 
