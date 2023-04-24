@@ -41,7 +41,7 @@ export default function Home() {
   const [isSendHelpClick2Visible, setIsSendHelpClick2Visible] = useState(false);
   const [isSendHelpClick3Visible, setIsSendHelpClick3Visible] = useState(false);
   const [isExplorerVisible, setIsExplorerVisible] = useState(false);
-  const [isWelcomeCardVisible, setIsWelcomeCardVisible] = useState(true);
+  const [isWelcomeCardVisible, setIsWelcomeCardVisible] = useState(false);
 
   const [isSendVisible, setIsSendVisible] = useState(false);
 
@@ -53,7 +53,7 @@ export default function Home() {
 
     const networkParam = searchParams.get("network");
 
-    // ToggleInbox();
+    ToggleInbox();
 
     if (addressParam) {
       setAddress(addressParam);
