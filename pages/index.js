@@ -412,8 +412,8 @@ export default function Home() {
             >
               <img
                 style={{
-                  maxWidth: "196px",
-                  width: "100%",
+                  maxWidth: "256px",
+                  width: "90%",
                   margin: "0px",
                 }}
                 src="logo_v4_long_01_beta-blue.svg"
@@ -428,7 +428,7 @@ export default function Home() {
                 justifyContent: "space-between",
                 height: "100%",
                 width: "100%",
-                maxWidth: "128px",
+                maxWidth: "96px",
               }}
             >
               <button
@@ -1315,14 +1315,10 @@ export default function Home() {
           </form>
         )}
         {isWelcomeCardVisible && (
-          <div
-            className={styles.welcomeCard}
-            style={{ marginTop: "24px", padding: "12px" }}
-          >
-            <h2>Welcome!</h2>
+          <div className={styles.welcomeCard} style={{ marginTop: "24px" }}>
             <p style={{ marginTop: "12px" }}>
-              Discover public conversation over 12 networks and participate in a
-              decentralise discution.
+              "A decentralized chat system that already exists, waiting to be
+              discovered and unBlocked"
             </p>
           </div>
         )}

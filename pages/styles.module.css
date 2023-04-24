@@ -514,28 +514,28 @@
 }
 
 .welcomeCard {
-  margin-top: 6px;
+  /* margin-top: 6px; */
   border-radius: 15px;
   border: 3px solid rgba(10, 202, 166, 0.9);
   /* background-color: #282c33ff; */
   font-family: "Roboto mono";
   font-size: 1.2em;
   padding: 60px;
-  min-height: 50%;
+  /* min-height: 50%; */
   color: #ccc;
 }
 
 .welcomeCard h2 {
   text-align: center;
   font-family: "Roboto mono";
-  padding: 6px;
+  /* padding: 6px; */
   color: #f2f2f2;
   margin-top: 6px;
 }
 
 .welcomeCard p {
   text-align: center;
-  padding: 6px;
+  /* padding: 6px; */
 }
 
 .myContainer div {
