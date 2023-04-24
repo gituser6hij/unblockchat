@@ -1317,8 +1317,8 @@ export default function Home() {
         {isWelcomeCardVisible && (
           <div className={styles.welcomeCard} style={{ marginTop: "24px" }}>
             <p style={{ marginTop: "12px" }}>
-              "A decentralized chat system that already exists, waiting to be
-              discovered and unBlocked"
+              A decentralized chat system that already exists, waiting to be
+              discovered and unBlocked
             </p>
           </div>
         )}
