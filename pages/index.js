@@ -40,7 +40,7 @@ export default function Home() {
   const [isSendHelpClick1Visible, setIsSendHelpClick1Visible] = useState(true);
   const [isSendHelpClick2Visible, setIsSendHelpClick2Visible] = useState(false);
   const [isSendHelpClick3Visible, setIsSendHelpClick3Visible] = useState(false);
-  const [isExplorerVisible, setIsExplorerVisible] = useState(true);
+  const [isExplorerVisible, setIsExplorerVisible] = useState(false);
 
   const [isSendVisible, setIsSendVisible] = useState(false);
 
@@ -51,6 +51,8 @@ export default function Home() {
     const addressParam = searchParams.get("address");
 
     const networkParam = searchParams.get("network");
+
+    ToggleInbox();
 
     if (addressParam) {
       setAddress(addressParam);
@@ -452,7 +454,9 @@ export default function Home() {
           }}
         >
           <button
-            className={styles.settingsButton}
+            className={`${styles.settingsButton} ${
+              isExplorerVisible ? styles.settingsButton2 : ""
+            }${isClicked ? styles.settingsButton : ""}`}
             onClick={ToggleInbox}
             style={{
               cursor: "pointer",
@@ -2190,7 +2194,7 @@ export default function Home() {
                 flex: 1,
                 alignItems: "center",
 
-                marginTop: "12px",
+                marginTop: "24px",
               }}
               src="logo_v4_square_01.svg"
               alt="UnBlockChat logo"
@@ -2202,7 +2206,7 @@ export default function Home() {
           className={styles.myContainer}
           style={{
             backgroundColor: "transparent",
-            marginTop: "12px",
+            marginTop: "24px",
             padding: "0px 12px",
           }}
         >
@@ -2241,7 +2245,7 @@ export default function Home() {
           style={{
             flex: 1,
             textAlign: "center",
-            marginTop: "90px",
+            marginTop: "24px",
             fontFamily: "monospace",
           }}
         >
