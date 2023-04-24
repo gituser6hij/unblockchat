@@ -1316,13 +1316,13 @@ export default function Home() {
         )}
         {isWelcomeCardVisible && (
           <div
-            className={styles.myContainer}
+            className={styles.welcomeCard}
             style={{ marginTop: "24px", padding: "12px" }}
           >
-            <p>Welcome!</p>
+            <h2>Welcome!</h2>
             <p style={{ marginTop: "12px" }}>
               Discover public conversation over 12 networks and participate in a
-              censor-resistant decentralise discution.
+              decentralise discution.
             </p>
           </div>
         )}
