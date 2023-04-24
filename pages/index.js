@@ -41,6 +41,7 @@ export default function Home() {
   const [isSendHelpClick2Visible, setIsSendHelpClick2Visible] = useState(false);
   const [isSendHelpClick3Visible, setIsSendHelpClick3Visible] = useState(false);
   const [isExplorerVisible, setIsExplorerVisible] = useState(false);
+  const [isWelcomeCardVisible, setIsWelcomeCardVisible] = useState(true);
 
   const [isSendVisible, setIsSendVisible] = useState(false);
 
@@ -52,7 +53,7 @@ export default function Home() {
 
     const networkParam = searchParams.get("network");
 
-    ToggleInbox();
+    // ToggleInbox();
 
     if (addressParam) {
       setAddress(addressParam);
@@ -68,6 +69,7 @@ export default function Home() {
     setIsSendVisible(false);
     setIsClicked(true);
     setIsExplorerVisible(true);
+    setIsWelcomeCardVisible(false);
   };
 
   const ToggleInbox = () => {
@@ -75,6 +77,7 @@ export default function Home() {
     setIsSendVisible(false);
     setIsClicked(false);
     setIsExplorerVisible(true);
+    setIsWelcomeCardVisible(false);
   };
 
   const ToggleSend = () => {
@@ -82,6 +85,15 @@ export default function Home() {
     setIsClicked(false);
     setIsSendVisible(true);
     setIsExplorerVisible(false);
+    setIsWelcomeCardVisible(false);
+  };
+
+  const ToggleWelcomeCard = () => {
+    setIsDropdownOpen(false);
+    setIsClicked(false);
+    setIsSendVisible(false);
+    setIsExplorerVisible(false);
+    setIsWelcomeCardVisible(true);
   };
 
   const ToggleSendNetwork = () => {
@@ -224,7 +236,8 @@ export default function Home() {
     setIsDropdownOpen(!isDropdownOpen);
     setIsSendVisible(false);
     setIsClicked(false);
-    setIsExplorerVisible(isDropdownOpen ? true : false);
+    setIsExplorerVisible(false);
+    setIsWelcomeCardVisible(isDropdownOpen ? true : false);
   };
 
   const toggleExplorer = () => {
@@ -232,6 +245,7 @@ export default function Home() {
     setIsSendVisible(false);
     setIsClicked(false);
     setIsExplorerVisible(true);
+    setIsWelcomeCardVisible(false);
   };
 
   const handleHelpClick = () => {
@@ -1300,7 +1314,18 @@ export default function Home() {
             </button>
           </form>
         )}
-
+        {isWelcomeCardVisible && (
+          <div
+            className={styles.myContainer}
+            style={{ marginTop: "24px", padding: "12px" }}
+          >
+            <p>Welcome!</p>
+            <p style={{ marginTop: "12px" }}>
+              Discover public conversation over 12 networks and participate in a
+              censor-resistant decentralise discution.
+            </p>
+          </div>
+        )}
         {transactions.length > 0 && (
           <div className={styles.conversation}>
             <h3>Discution:</h3>
