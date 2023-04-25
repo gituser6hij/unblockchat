@@ -443,7 +443,7 @@ export default function Home() {
                   alignItems: "center",
                 }}
               >
-                <span style={{ flex: 1 }}>Explore</span>
+                <span style={{ flex: 1 }}>Discover</span>
                 <img
                   src="CarbonIbmWatsonDiscovery.svg"
                   alt="help"
@@ -461,7 +461,7 @@ export default function Home() {
           style={{
             display: "flex",
             flexDirection: "row",
-            marginTop: "12px",
+            marginTop: "20px",
             justifyContent: "space-between",
             textAlign: "center",
             alignItems: "center",
@@ -505,7 +505,7 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <span style={{ flex: 1 }}>Isolate</span>
+            <span style={{ flex: 1 }}>Focus</span>
             <img
               src="CarbonCollaborate.svg"
               alt="help"
@@ -1318,7 +1318,7 @@ export default function Home() {
           </form>
         )}
         {isWelcomeCardVisible && (
-          <div className={styles.welcomeCard} style={{ marginTop: "24px" }}>
+          <div className={styles.welcomeCard} style={{ marginTop: "20px" }}>
             <p style={{ marginTop: "12px" }}>
               A decentralized chat system that already exists, waiting to be
               discovered and unBlocked
