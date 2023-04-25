@@ -515,14 +515,11 @@
 }
 
 .welcomeCard {
-  /* margin-top: 6px; */
   border-radius: 15px;
   border: 3px solid rgba(10, 202, 166, 0.9);
-  /* background-color: #282c33ff; */
   font-family: "Roboto mono";
   font-size: 1.2em;
-  padding: 60px;
-  /* min-height: 50%; */
+  padding: 24px;
   color: #ccc;
 }
 
@@ -537,6 +534,9 @@
 .welcomeCard p {
   text-align: center;
   /* padding: 6px; */
+  padding: 24px 12px;
+  font-weight: 700;
+  font-family: monospace;
 }
 
 .myContainer div {

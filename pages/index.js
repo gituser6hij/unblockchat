@@ -603,13 +603,12 @@ export default function Home() {
               <ul className={styles.myTitle}>
                 <li>
                   click <img src="CarbonUserProfile.svg" width="12px" /> to read
-                  the address messages{" "}
+                  conversation{" "}
                 </li>
                 {/* <hr className={styles.myHr} /> */}
 
                 <li>
-                  click on &quot;<strong>Title</strong>&quot; to get an article
-                  link{" "}
+                  click on &quot;<strong>Title</strong>&quot; to get an article{" "}
                 </li>
               </ul>
               <hr className={styles.myHr} />
@@ -1319,7 +1318,7 @@ export default function Home() {
         )}
         {isWelcomeCardVisible && (
           <div className={styles.welcomeCard} style={{ marginTop: "20px" }}>
-            <p style={{ marginTop: "12px" }}>
+            <p>
               A decentralized chat system that already exists, waiting to be
               discovered and unBlocked
             </p>
