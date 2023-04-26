@@ -1066,9 +1066,26 @@ export default function Home() {
               }}
               onClick={handleSendHelpClick3Close}
             >
-              <p>
-                Chose a network, you will have to pay the gas fee on respective
-                networks. Then, connect your wallet.
+              <p style={{ marginTop: "12px" }}>
+                {" "}
+                In READ/FOCUS mode, you can choose the network on which you want
+                to view the chat. This feature is free of charge.
+              </p>
+
+              <p style={{ marginTop: "12px" }}>
+                When using SEND mode, you will need to pay the gas fees in the
+                native currency of the network while sending a message.
+              </p>
+              <p style={{ marginTop: "12px" }}>
+                For example, Ethereum uses ETH, Sepolia uses SepoliaETH, and
+                Polygon uses MATIC, among others.
+              </p>
+              <p style={{ marginTop: "12px" }}>
+                {" "}
+                UnBlockChat does not collect any money when you send a message.
+                It simply provides you with an interface that interacts with
+                your wallet, which in turn interacts with blockchains. The fees
+                are embedded by the chosen network itself.
               </p>
             </div>
           </div>
@@ -1206,17 +1223,6 @@ export default function Home() {
                     placeholder="0x..."
                   />
                 </div>
-
-                {/* <div>
-                Enter a transaction hash:{" "}
-                <input
-                  type="text"
-                  value={address3}
-                  onChange={(event) => setAddress3(event.target.value)}
-                  className={styles.inputText}
-                  placeholder="0x...(not available yet)"
-                />
-              </div> */}
               </div>
             )}
             {isHelpVisible2 && (
@@ -1277,6 +1283,22 @@ export default function Home() {
                 }}
               >
                 Choose a network:
+                <button
+                  onClick={handleSendHelpClick3}
+                  type="button"
+                  style={{
+                    all: "unset", // Reset all styles
+                    marginLeft: "3px",
+                    cursor: "pointer",
+                    // Adjust the margin as needed
+                  }}
+                >
+                  <img
+                    src="CarbonHelp.svg"
+                    alt="help"
+                    style={{ height: "20px" }}
+                  />
+                </button>
               </p>
               <select
                 value={network}
