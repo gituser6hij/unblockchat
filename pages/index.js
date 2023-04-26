@@ -2241,16 +2241,16 @@ export default function Home() {
             </p>
             <div className={styles.myContent}>
               <p className={styles.myAddress}>
-                0xe03948003A4346fa8108f8DA1Cf3C12549f0542d
+                0xdB6f8A6507786ddEB6256AD1B0bDfC31eb538a69
               </p>
               <button
                 onClick={(event) => {
                   const searchParams = new URLSearchParams();
                   searchParams.set(
                     "address",
-                    "0xe03948003A4346fa8108f8DA1Cf3C12549f0542d"
+                    "0xdB6f8A6507786ddEB6256AD1B0bDfC31eb538a69"
                   );
-                  searchParams.set("network", "sepolia");
+                  searchParams.set("network", "mainnet");
                   window.location.href = `?${searchParams.toString()}`;
                 }}
                 className={styles.myButton}
