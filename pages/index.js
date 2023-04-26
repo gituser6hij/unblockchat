@@ -42,6 +42,7 @@ export default function Home() {
   const [isSendHelpClick3Visible, setIsSendHelpClick3Visible] = useState(false);
   const [isExplorerVisible, setIsExplorerVisible] = useState(false);
   const [isWelcomeCardVisible, setIsWelcomeCardVisible] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const [isSendVisible, setIsSendVisible] = useState(false);
 
