@@ -153,44 +153,45 @@ function SendMessage() {
       {status && (
         <div
           style={{
-            // display: "flex",
-            // alignItems: "center",
             fontSize: "1em",
             fontFamily: "monospace",
-            // flexDirection: "column",
-            // alignContent: "center",
             textAlign: "start",
             width: "100%",
             marginTop: "20px",
             padding: "12px",
             borderRadius: "15px",
             border: "3px solid rgba(10, 202, 166, 0.9)",
-            wordBreak: "break-all",
+            backgroundColor: "rgba(40, 44, 51, 0.5)",
           }}
         >
           <div>
-            <p>{status}</p>
             <p
               style={{
                 fontSize: "1.1em",
                 fontWeight: "bold",
-                marginTop: "20px",
+                textAlign: "center",
+                padding: "12px 0px",
+
+                color: "#ffd700ff",
               }}
             >
-              Details:
+              {status}
             </p>
+
             <ul
               style={{
-                marginTop: "6px",
+                marginTop: "12px",
                 listStyleType: "none",
+                wordBreak: "break-all",
               }}
             >
               <li
                 style={{
                   marginTop: "6px",
+                  fontWeight: "bold",
                 }}
               >
-                Sender:
+                From:
               </li>
               <li
                 style={{
@@ -203,26 +204,31 @@ function SendMessage() {
               <li
                 style={{
                   marginTop: "6px",
+                  fontWeight: "bold",
                 }}
               >
-                Receiver:
+                To:
               </li>
               <li>{to}</li>
               <li
                 style={{
                   marginTop: "6px",
+                  fontWeight: "bold",
                 }}
               >
-                Block number: {blocknumber}
+                Block number:
               </li>
+              <li>{blocknumber}</li>
 
               <li
                 style={{
                   marginTop: "6px",
+                  fontWeight: "bold",
                 }}
               >
-                Gas spent: {gas}
+                Gas spent:
               </li>
+              <li>{gas}</li>
             </ul>
           </div>
         </div>
